@@ -5,7 +5,7 @@ export const Form = styled(FormikForm)`
 display:flex;
 flex-direction: column;
 padding:40px;
-width: 800px;
+max-width:60vh;
 height:auto;
 border-radius: 40px;
 background-color:grey;
