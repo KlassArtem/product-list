@@ -18,6 +18,7 @@ padding:15px 25px;
 border-radius: 15px;
 background-color:brown;
 cursor:pointer;
+margin-left:10px;
 &:hover{
     background-color:red;
     color:whitesmoke;

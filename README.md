@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# Tweets
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Description 📑
 
-## Available Scripts
+This passage describes a web application called "Tweets" that allows displaying
+user cards with interactive tweet cards. Each tweet card has a "Follow" button
+that, when clicked, changes the text to "Following" and updates the button
+color. The follower count displayed on the card also increases, including the
+user's follow count. When the page is refreshed, the final state of the "Follow"
+button and follower count is preserved.
 
-In the project directory, you can run:
+To improve the user experience, the application uses skeleton cards while
+waiting for a response from the backend. Additionally, the application displays
+eight user cards during the initial render, and a "Load more" button appears to
+render the next eight user cards.
 
-### `npm start`
+The application includes two routes: / - Home component /tweets - Tweets
+component, a page for displaying tweets. The Tweets page includes a Back button
+that leads back to the main page.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Installation ⚡️
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To start a project on GitHub, you must first clone it onto your local machine.
+For example, if you are working with a React project created using
+create-react-app, you can clone the project by running the command "git clone
+https://github.com/username/project.git" in your terminal.
 
-### `npm test`
+After cloning the project, navigate to the project directory and install all
+required dependencies by running the command "npm install" in your terminal.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Once all dependencies are installed, you can launch the development server by
+running the command "npm start". This will open the project in your default
+browser, and any modifications you make to the code will automatically update in
+the browser.
 
-### `npm run build`
+### Addition ⚙️
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+For this application, a personal backend was created for development using the
+UI service https://mockapi.io, specifically the users resource. The user object
+is described as follows:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```json
+"users": [ {
+"id": 1,
+"user": "Dan Humphrey",
+"tweets": 777,
+"followers": 100500,
+"avatar": "url.jpg"
+} ]
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Tech Stack 🛠
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- React ✔
+- React Router DOM ✔
+- Axios ✔
+- Styled Components ✔
+- Styled System ✔
+- React Loading Skeleton ✔
