@@ -18,6 +18,7 @@ export function App () {
       <div
         style={{
           display: 'flex',
+        flexWrap: 'wrap',
           justifyContent: 'center',
           alignItems: 'center',
         }}
