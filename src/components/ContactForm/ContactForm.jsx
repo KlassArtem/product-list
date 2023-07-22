@@ -14,7 +14,7 @@ export function ContactForm() {
         } else if (contacts.find((contact) => {
             return contact.name === inputValues.name;
         })) {
-            return alert(`${inputValues.name} is already in contacts`);
+            return alert(`${inputValues.name} we have it in list`);
         } else {
             const contact = {
                 name: inputValues.name,
@@ -34,11 +34,11 @@ export function ContactForm() {
         };
         
         const phoneSchema = Yup.number()
-            .typeError("That doesn't look like a phone number")
-            .positive("A phone number can't start with a minus")
+            .typeError("That doesn't look like quantity...")
+            .positive("quantity can't be negative")
             .integer("A phone number can't include a decimal point")
             .min(1)
-            .required('A phone number is required');
+            .required('Quantity is required...');
         
         const validationSchema = Yup.object({
             name: Yup.string().required(),
